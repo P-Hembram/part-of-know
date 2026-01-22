@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>should be know</title>
+    <style>
+      /* 1. Basic Reset & Setup */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f7f6;
+        color: #333;
+        line-height: 1.6;
+        padding: 40px 20px;
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+      .innar_container {
+        display: flex;
+        justify-content: center;
+      }
+
+
+      header {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      /* 2. The Responsive Grid (The "Row") */
+      .row-grid {
+        display: grid;
+        /* Default: 1 column for mobile */
+        grid-template-columns: 1fr;
+        gap: 25px;
+      }
+
+      /* 3. The Columns (Cards) */
+      .column-card {
+        background: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        text-align: center;
+      }
+
+      .column-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .icon {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+        display: block;
+      }
+      .lowText {
+        opacity: 50%;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 10px;
+        font-size: large;
+      }
+
+      th {
+        text-align: center;
+      }
+
+      /* 4. Media Queries for Responsiveness */
+
+      /* Tablet: 2 Columns */
+      @media (min-width: 600px) {
+        .row-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      /* Desktop: 3 Columns */
+      @media (min-width: 900px) {
+        .row-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Should Know</h1>
+        <p>if you educate then you should know</p>
+      </header>
+
+      <div class="innar_container">
+
+      
+
+        <div class="row-grid" >
+          <!-- Land Record,Jharkhand -->
+
+          <div class="column-card" style="background-color: rgb(192, 238, 223);">
+            <h2>Land Record</h2>
+            <table style="width: 100%">
+              <tr>
+                <th>शब्द</th>
+                <th>मतलब</th>
+              </tr>
+              <tr>
+                <td>मौजा</td>
+                <td>गाँव / village</td>
+              </tr>
+              <tr>
+                <td>अंचल</td>
+                <td>प्रखंड</td>
+              </tr>
+              <tr>
+                <td>खेसर नंबर</td>
+                <td>प्लाट / plot no.</td>
+              </tr>
+              <tr>
+                <td>चौहद्दी</td>
+                <td>Boundaries</td>
+              </tr>
+              <tr>
+                <td>नवैयत-जमाबंदी</td>
+                <td>
+                  ज़मीन के प्रकार (नवैयत) और उसके अधिकारों (जमाबंदी) का सरकारी
+                  रिकॉर्ड
+                </td>
+              </tr>
+              <tr>
+                <td>जमाबंदी</td>
+                <td>
+                  भूमि के मालिकाना हक, विवरण और लगान का आधिकारिक सरकारी रिकॉर्ड;
+                  हर 5 साल में अपडेटेड।
+                </td>
+              </tr>
+              <tr>
+                <td>खसरा</td>
+                <td>Land Record - ज़मीन का रिकॉर्ड</td>
+              </tr>
+              <tr>
+                <td>बन्दोबस्त</td>
+                <td>Settlement /व्यवस्था, प्रबंध, या इंतज़ाम करना</td>
+              </tr>
+              <tr>
+                <td>रैयती जमीन</td>
+                <td>कृषि योग्य भूमि</td>
+              </tr>
+              <tr>
+                <td>रकवा</td>
+                <td>क्षेत्रफल (Area)</td>
+              </tr>
+              <tr>
+                <td>परगना</td>
+                <td>एक परगना कई गाँवों को मिलाकर बनता है</td>
+              </tr>
+              <tr>
+                <td>तौजी नंबर</td>
+                <td>
+                  पहले सरकार द्वारा ज़मींदारों को दी गई एक सीरियल या खाता संख्या
+                  होती थी, जो ज़मींदार के खाते और भूमि की पहचान करती थी
+                </td>
+              </tr>
+
+              <tr>
+                <td>परती कदीम</td>
+                <td>
+                  इसका मतलब है पुरानी परती भूमि, यानी वह ज़मीन जिस पर लंबे समय से
+                  खेती नहीं की गई है
+                </td>
+              </tr>
+              <tr>
+                <td>विष्णुप्रीत</td>
+                <td class="lowText">
+                  विष्णु की पूजा के निमित्त ब्राह्मण को दी जानेवाली भूमि
+                </td>
+              </tr>
+              <tr></tr>
+            </table>
+          </div>
+
+          <!-- Months Name in Hindi -->
+
+          <div class="column-card" style="background-color: rgb(201, 243, 213);">
+            <h2>Hindi Months</h2>
+            <table style="width: 100%">
+              <tr>
+                <th>हिंदी</th>
+                <th>English</th>
+                <th>Aprox starts</th>
+              </tr>
+              <tr>
+                <td>चैत्र</td>
+                <td>March</td>
+                <td>22_March–April</td>
+              </tr>
+              <tr>
+                <td>वैशाख</td>
+                <td>April</td>
+                <td>21_April–May</td>
+              </tr>
+              <tr>
+                <td>ज्येष्ठ</td>
+                <td>May</td>
+                <td>22_May–June</td>
+              </tr>
+              <tr>
+                <td>आषाढ़</td>
+                <td>June</td>
+                <td>22_June–July</td>
+              </tr>
+              <tr>
+                <td>श्रावण</td>
+                <td>July</td>
+                <td>23_July–August</td>
+              </tr>
+              <tr>
+                <td>भाद्रपद</td>
+                <td>August</td>
+                <td>23_August–September</td>
+              </tr>
+              <tr>
+                <td>आश्विन</td>
+                <td>September</td>
+                <td>23_September–October</td>
+              </tr>
+              <tr>
+                <td>कार्तिक</td>
+                <td>October</td>
+                <td>23_October–November</td>
+              </tr>
+              <tr>
+                <td>मार्गशीर्ष</td>
+                <td>November</td>
+                <td>22_November–December</td>
+              </tr>
+              <tr>
+                <td>पौष</td>
+                <td>December</td>
+                <td>22_December–January</td>
+              </tr>
+              <tr>
+                <td>माघ</td>
+                <td>January</td>
+                <td>21_January–February</td>
+              </tr>
+              <tr>
+                <td>फाल्गुन</td>
+                <td>February</td>
+                <td>20_February–March</td>
+              </tr>
+            </table>
+          </div>
+
+          <!-- numbers -->
+
+          <div class="column-card" style="background-color: rgb(247, 240, 198);">
+            <h2>Numbers</h2>
+            <table style="width: 100%">
+              <tr>
+                <th>English</th>
+                <th>हिंदी</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>१</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>२</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>३</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>४</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>५</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>६</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>७</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>८</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>९</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>१०</td>
+              </tr>
+              
+            </table>
+          </div>
+
+          <div class="column-card">
+            <img src="Famaly.webp" alt="Famaly" style="width:330px; height: 520px;">
+          </div>
+
+          <div class="column-card">
+            <span class="icon">📱</span>
+            <h3>Mobile Ready</h3>
+            <p>
+              Seamless experiences on smartphones, tablets, and desktop computers.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
