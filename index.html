@@ -29,10 +29,14 @@
         justify-content: center;
       }
 
-
       header {
         text-align: center;
         margin-bottom: 50px;
+      }
+      header h1 span {
+        background-color: rgb(246, 70, 70);
+        padding: 5px;
+        border-radius: 5px;
       }
 
       /* 2. The Responsive Grid (The "Row") */
@@ -102,18 +106,15 @@
   <body>
     <div class="container">
       <header>
-        <h1>Should Know</h1>
+        <h1><span>Should Know</span></h1>
         <p>if you educate then you should know</p>
       </header>
 
       <div class="innar_container">
-
-      
-
-        <div class="row-grid" >
+        <div class="row-grid">
           <!-- Land Record,Jharkhand -->
 
-          <div class="column-card" style="background-color: rgb(192, 238, 223);">
+          <div class="column-card" style="background-color: rgb(192, 238, 223)">
             <h2>Land Record</h2>
             <table style="width: 100%">
               <tr>
@@ -181,8 +182,8 @@
               <tr>
                 <td>परती कदीम</td>
                 <td>
-                  इसका मतलब है पुरानी परती भूमि, यानी वह ज़मीन जिस पर लंबे समय से
-                  खेती नहीं की गई है
+                  इसका मतलब है पुरानी परती भूमि, यानी वह ज़मीन जिस पर लंबे समय
+                  से खेती नहीं की गई है
                 </td>
               </tr>
               <tr>
@@ -197,7 +198,7 @@
 
           <!-- Months Name in Hindi -->
 
-          <div class="column-card" style="background-color: rgb(201, 243, 213);">
+          <div class="column-card" style="background-color: rgb(201, 243, 213)">
             <h2>Hindi Months</h2>
             <table style="width: 100%">
               <tr>
@@ -270,7 +271,7 @@
 
           <!-- numbers -->
 
-          <div class="column-card" style="background-color: rgb(247, 240, 198);">
+          <div class="column-card" style="background-color: rgb(247, 240, 198)">
             <h2>Numbers</h2>
             <table style="width: 100%">
               <tr>
@@ -317,23 +318,26 @@
                 <td>10</td>
                 <td>१०</td>
               </tr>
-              
             </table>
           </div>
-
+          <!-- famelly -->
           <div class="column-card">
-            <img src="Famaly.webp" alt="Famaly" style="width:330px; height: 520px;">
+            <img
+              src="Famaly.webp"
+              alt="Famaly"
+              style="width: 330px; height: 520px"
+            />
           </div>
 
           <div class="column-card">
             <span class="icon">📱</span>
             <h3>Mobile Ready</h3>
             <p>
-              Seamless experiences on smartphones, tablets, and desktop computers.
+              Seamless experiences on smartphones, tablets, and desktop
+              computers.
             </p>
           </div>
         </div>
-
       </div>
     </div>
   </body>
